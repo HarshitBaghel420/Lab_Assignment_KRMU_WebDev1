@@ -1,0 +1,244 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content sections */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* About Me section */
+#about {
+    background-color: #e4edff;
+    padding: 30px 10px 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 71, 171, 0.15);
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #c4d7ff;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Projects section */
+#projects {
+    background-color: #fff;
+    padding: 20px 20px 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 71, 171, 0.15);
+}
+
+#projects h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style-position: inside;
+}
+
+#projects li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Skills section */
+/* Center the entire skills section */
+#skills {
+    text-align: center;           /* Centers heading and section content */
+    padding: 40px 0;
+}
+
+/* Center and style the table */
+#skills table {
+    margin: 20px auto;            /* Centers horizontally */
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0047ab;
+}
+
+/* Table cells */
+#skills th, #skills td {
+    border: 1px solid #0047ab;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Header color */
+#skills th {
+    background-color: #0047ab;
+    color: white;
+}
+
+
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 30px 25px 40px;
+    max-width: 600px;
+    margin: 40px auto 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 71, 171, 0.15);
+}
+
+#contact h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#contact form {
+    border: 1px solid #0047ab;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#contact label {
+    display: inline-block;
+    width: 80px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    vertical-align: top;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    border: 1px solid #0047ab;
+    border-radius: 4px;
+    padding: 6px 10px;
+    width: calc(100% - 100px);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #002f70;
+}
+
+#contact textarea {
+    height: 90px;
+}
+
+#contact input[type="submit"] {
+    background-color: #0047ab;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #002f70;
+}
+
+/* Clear float in form */
+#contact form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    main {
+        margin: 20px 10px;
+        padding: 0 5px;
+    }
+
+    #skills table {
+        width: 100% !important;
+    }
+
+    #contact label,
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+        width: 100% !important;
+        display: block;
+    }
+
+    #contact label {
+        margin-bottom: 6px;
+    }
+
+    #contact input[type="submit"] {
+        float: none;
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 8px 0 8px;
+        font-size: 1rem;
+    }
+}
