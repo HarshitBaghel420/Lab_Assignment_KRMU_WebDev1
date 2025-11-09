@@ -1,4 +1,4 @@
-/* Reset default styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Header and navigation */
 header {
     background-color: #0047ab;
     color: white;
@@ -41,14 +40,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content sections */
 main {
     max-width: 800px;
     margin: 30px auto;
     padding: 0 15px;
 }
 
-/* About Me section */
 #about {
     background-color: #e4edff;
     padding: 30px 10px 40px;
@@ -99,16 +96,15 @@ main {
     font-size: 1rem;
 }
 
-/* Skills section */
-/* Center the entire skills section */
+
 #skills {
-    text-align: center;           /* Centers heading and section content */
+    text-align: center;          
     padding: 40px 0;
 }
 
-/* Center and style the table */
+
 #skills table {
-    margin: 20px auto;            /* Centers horizontally */
+    margin: 20px auto;        
     border-collapse: collapse;
     width: 60%;
     background-color: #fff;
@@ -116,7 +112,6 @@ main {
     border: 1px solid #0047ab;
 }
 
-/* Table cells */
 #skills th, #skills td {
     border: 1px solid #0047ab;
     padding: 10px 15px;
@@ -124,14 +119,11 @@ main {
     font-size: 1rem;
 }
 
-/* Header color */
 #skills th {
     background-color: #0047ab;
     color: white;
 }
 
-
-/* Contact section */
 #contact {
     background-color: #fff;
     padding: 30px 25px 40px;
@@ -201,14 +193,12 @@ main {
     background-color: #002f70;
 }
 
-/* Clear float in form */
 #contact form::after {
     content: "";
     display: block;
     clear: both;
 }
 
-/* Responsive design */
 @media (max-width: 700px) {
     main {
         margin: 20px 10px;
@@ -241,4 +231,5 @@ main {
         margin: 8px 8px 0 8px;
         font-size: 1rem;
     }
+
 }
