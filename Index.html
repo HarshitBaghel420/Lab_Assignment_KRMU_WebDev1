@@ -2,81 +2,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Harshit Baghel</h1>
-        <nav>
-            <a href="#about">About Me</a><br>
-            <a href="#projects">Projects</a><br>
-            <a href="#contact">Contact</a>
-        </nav>
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I am a web development student.This is my personal portfolio website</p>
-    </header>
+  <header class="top-bar">
+    <div class="logo">My Portfolio</div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>About me</h2>
-        <img src="WhatsApp Image 2025-10-04 at 19.46.02_1962af4f.jpg" height="200" width="150" alt="my photo">
-        <p>I am passionate about learning with development and building creative projects.</p>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="intro">Hi, I am</p>
+          <h1>Harshit Baghel</h1>
+          <h2 class="role">Full Stack Developer</h2>
+          <p class="subtitle">
+            I build modern, responsive web applications with clean UI and
+            maintainable code.
+          </p>
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img
+            src="WhatsApp Image 2025-10-04 at 19.46.02_1962af4f.jpg"
+            alt="Photo of Harshit Baghel"
+            class="hero-photo"
+          />
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><b>Portfolio Website:</b>a personal one page website to showcase your bio</li>
-            <li><b>Medium clone:</b>a simple blog layout that looks like medium, build with only HTML and CSS</li>
-            <li><b>Birthday Card:</b>A creative greeting card webpage designed with HTML structure and CSS styling</li>
-            <li><b>User Form:</b>A form webpage with fields like name, email and message for practicing form handling.</li>
-        </ul>
+    <!-- About -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        I am a web development student who enjoys creating interactive and
+        responsive websites. I love learning new technologies and turning ideas
+        into real, working projects. My focus is on writing clean code and
+        designing user-friendly interfaces.
+      </p>
     </section>
 
-   <section id="skills">
-    <h2>Technical Skills</h2>
-    <table>
-           <tr>
-            <th>Skill</th>
-            <th>Level</th>
-           </tr>
-           <tr>
-            <td>HTML</td>
-            <td>Beginner</td>
-           </tr>
-           <tr>
-            <td>CSS</td>
-            <td>Beginner</td>
-           </tr>
-           <tr>
-            <td>Javascript</td>
-            <td>Learning</td>
-           </tr>
-           <tr>
-            <td>C++</td>
-            <td>Beginner</td>
-           </tr>
-        </table>
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <h2>My Skills</h2>
+      <div class="skills-row">
+        <div class="skill-card">
+          <span class="skill-title">HTML</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-title">CSS</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-title">JavaScript</span>
+          <span class="skill-level">Learning</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-title">C++</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Home Access">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Home Access">
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form>    
-        </section>
-    </footer>
+    <!-- Projects (CSS GRID SECTION) -->
+    <section id="projects" class="section projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>
+            A one-page portfolio website built with HTML, CSS Flexbox, and
+            Grid. Fully responsive and mobile-first.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>
+            A simple blog layout inspired by Medium, focused on clean typography
+            and layout structure.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Project 3</h3>
+          <p>
+            A birthday greeting page with custom styling and subtle animations
+            to make it feel special.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="btn secondary-btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>© 2025 Harshit Baghel. All rights reserved.</p>
+    <a href="#home" class="btn back-to-top">Back to Top</a>
+  </footer>
 </body>
 </html>
